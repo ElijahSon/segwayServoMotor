@@ -4,7 +4,7 @@ Segway Control by using a mpu6050: just the gyro,  2 FIT0450U engines
         an 5V power bank
 
 ## Problems
- - think about drawing power on the power supply
+ - reminder/pb: think about drawing power on the power supply 
  - unexplained resonance at 10 Hz, probably due to the gyro
  - delay of 15ms in the model
  - 0.5V dead zone on the motors
