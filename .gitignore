@@ -1,21 +1,19 @@
 # =========================================================
-# MATLAB / Simulink Professional .gitignore
-# Optimized for GitHub engineering repositories
+# Universal Engineering .gitignore
+# MATLAB + Simulink + C + C++ Projects
 # =========================================================
 
+
 # =========================================================
-# MATLAB autosave / backup files
+# MATLAB / Simulink
 # =========================================================
 
+# Autosave / backup
 *.asv
 *.autosave
 *.m~
 
-
-# =========================================================
-# Simulink generated cache / build folders
-# =========================================================
-
+# Simulink generated folders
 slprj/
 sccprj/
 simulink_cache/
@@ -23,106 +21,95 @@ cache/
 codegen/
 generated/
 
-
-# =========================================================
 # Simulink cache files
-# =========================================================
-
 *.slxc
 
-
-# =========================================================
 # MATLAB compiled binaries
-# =========================================================
-
 *.mex*
 *.p
-*.mlappinstall
 
-
-# =========================================================
-# MATLAB crash dumps / logs
-# =========================================================
-
+# MATLAB crash dumps
 matlab_crash_dump.*
 hs_err_pid*
-*.log
 
-
-# =========================================================
-# Simulink / Embedded Coder generated files
-# =========================================================
-
+# Simulation artifacts
 *.rtw
 *.tmf
-*.mk
-*.obj
+
+
+# =========================================================
+# C / C++ Build Files
+# =========================================================
+
+# Object files
 *.o
-*.dll
-*.exe
-*.exp
+*.obj
+
+# Static libraries
+*.a
 *.lib
 
+# Shared libraries
+*.so
+*.dll
+*.dylib
 
-# =========================================================
-# Coverage / testing artifacts
-# =========================================================
+# Executables
+*.exe
+*.out
+*.app
 
-coverage/
-slcoverage/
-test_results/
+# Debug files
+*.pdb
 
-
-# =========================================================
-# Temporary simulation outputs
-# =========================================================
-
-*.tmp
-*.temp
-
-
-# =========================================================
-# Optional large generated datasets
-# Uncomment if simulation outputs are huge
-# =========================================================
-
-# *.mat
-# *.csv
-# *.dat
+# Build directories
+build/
+Build/
+bin/
+Bin/
+obj/
+Obj/
+Debug/
+Release/
+dist/
+out/
 
 
 # =========================================================
-# Operating system files
+# CMake
 # =========================================================
 
-# macOS
-.DS_Store
-
-# Windows
-Thumbs.db
-desktop.ini
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+Makefile
 
 
 # =========================================================
-# Editors / IDEs
+# Visual Studio
 # =========================================================
 
-# VS Code
+.vs/
+*.vcxproj.user
+*.suo
+
+
+# =========================================================
+# VS Code / JetBrains
+# =========================================================
+
 .vscode/
-
-# JetBrains
 .idea/
 
-# MATLAB Project local settings
-resources/project/Root.type.Files/
-
 
 # =========================================================
-# Python cache (if co-simulation/scripts are used)
+# Logs / Temporary files
 # =========================================================
 
-__pycache__/
-*.pyc
+*.log
+*.tmp
+*.temp
 
 
 # =========================================================
@@ -132,28 +119,53 @@ __pycache__/
 *.zip
 *.rar
 *.7z
+*.tar
 *.tar.gz
 
 
 # =========================================================
-# Build / distribution folders
+# Operating System Files
 # =========================================================
 
-build/
-dist/
-out/
+# Windows
+Thumbs.db
+desktop.ini
+
+# macOS
+.DS_Store
 
 
 # =========================================================
-# KEEP THESE FILE TYPES TRACKED
-# (DO NOT IGNORE)
+# Python cache (optional)
+# =========================================================
+
+__pycache__/
+*.pyc
+
+
+# =========================================================
+# OPTIONAL LARGE GENERATED DATA
+# Uncomment if needed
+# =========================================================
+
+# *.mat
+# *.csv
+# *.dat
+
+
+# =========================================================
+# KEEP TRACKED
 # =========================================================
 #
 # *.m
 # *.mlx
 # *.slx
 # *.mdl
-# *.prj
+# *.c
+# *.cpp
+# *.h
+# *.hpp
 # *.pdf
+# *.md
 #
 # =========================================================
